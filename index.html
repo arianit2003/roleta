@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+    <link rel="stylesheet" href="Scripts/style.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    </head>
+<body>
+  <!--- HEADER-->
+<header>
+  <!---Nav-->
+  <div class="nav container">
+    <img class="logo"  src="Images/logo.PNG">
+    <a href="#" class="logo1">Uebsite per Shitjen e Roletave(USHR)</a>
+    
+    <ul>
+      <li><a href="#ballina"> <h3 class="ngjyra-menu">Ballina</h3></a></li>
+      <li><a href="#modelet"> <h3 class="ngjyra-menu">Modelet</h3></a></li>
+      <li><a href="#montimi"> <h3 class="ngjyra-menu">Montimi</h3></a></li>
+      <li><a href="#kontakti"> <h3 class="ngjyra-menu">Kontakti</h3></a></li>
+      
+
+      
+
+    </ul>
+   
+    <!-- Cart Icons-->
+    <i class="bx bx-shopping-bag" id="cart-icon"></i>
+  </div>
+</header>
+
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade" id="ballina" >
+    <div class="numbertext">1 / 3</div>
+    <img src="Images/7.jpg" class="img"> 
+    <div class="text">Sasi e limituar!</div>
+  </div>
+
+  <div class="mySlides fade" >
+    <div class="numbertext">2 / 3</div>
+    <img src="Images/8.jpg" class="img" >
+    <div class="text">Zbritje 50%</div>
+  </div>
+
+  <div class="mySlides fade" >
+    <div class="numbertext">3 / 3</div>
+    <img src="Images/6.jpg" class="img" >
+    <div class="text">Montimi gratis!</div>
+  </div>
+ 
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+<!--Shop-->
+<section class="shop container" id="modelet"> 
+  <h2 class="section-title">Modelet</h2>
+  <!---Content-->
+  <div class="shop-content">
+    <!-- Box 1-->
+
+    <div class="product-box">
+      <img src="Images/1.jpg" alt="" class="product-img">
+      <h2 class="product-title">Roleta Veneciane</h2>
+      <span class="price">€25</span>
+      <i class="bx bx-shopping-bag add-cart"></i>
+    </div>
+    <!-- Box 2-->
+
+    <div class="product-box">
+      <img src="Images/2.jpeg" alt="" class="product-img">
+      <h2 class="product-title">Roleta te drurit</h2>
+      <span class="price">€40</span>
+      <i class="bx bx-shopping-bag add-cart"></i>
+    </div>
+    <!-- Box 3-->
+
+    <div class="product-box">
+      <img src="Images/3.jpg" alt="" class="product-img">
+      <h2 class="product-title">Perde Bambus</h2>
+      <span class="price">€45</span>
+      <i class="bx bx-shopping-bag add-cart"></i>
+    </div>
+     <!-- Box 4-->
+
+     <div class="product-box">
+      <img src="Images/4.jpg" alt="" class="product-img">
+      <h2 class="product-title">Perde Rolle</h2>
+      <span class="price">€55</span>
+      <i class="bx bx-shopping-bag add-cart"></i>
+    </div>
+     <!-- Box 5-->
+
+     <div class="product-box">
+      <img src="Images/5.jpg" alt="" class="product-img">
+      <h2 class="product-title">Perde Zebra</h2>
+      <span class="price">€65</span>
+      <i class="bx bx-shopping-bag add-cart"></i>
+    </div>
+     <!-- Box 6-->
+
+     <div class="product-box">
+      <img src="Images/57.jpg" alt="" class="product-img">
+      <h2 class="product-title">Perde Vertikale</h2>
+      <span class="price">€50</span>
+      <i class="bx bx-shopping-bag add-cart"></i>
+    </div>
+     <!-- Box 7-->
+
+     <div class="product-box">
+      <img src="Images/25.jpg" alt="" class="product-img">
+      <h2 class="product-title">Roleta Veneciane Antracit</h2>
+      <span class="price">€70</span>
+      <i class="bx bx-shopping-bag add-cart"></i>
+    </div>
+     <!-- Box 8-->
+
+     <div class="product-box">
+      <img src="Images/download.jpg" alt="" class="product-img">
+      <h2 class="product-title">Roleta Veneciane Extra</h2>
+      <span class="price">82€</span>
+      <i class="bx bx-shopping-bag add-cart"></i>
+    </div>
+
+ 
+  </div>
+  </section>
+
+  <section class="mont " id="montimi">
+    <h2 class="h2-montimi">Montimi</h2>
+    <div id="videos">
+      <iframe width="500" height="315" src="https://www.youtube.com/embed/HtVucVg0QEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="500" height="315" src="https://www.youtube.com/embed/Iey8PEZuP98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="500" height="315" src="https://www.youtube.com/embed/R1UJI66iC2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <div id="overlay">
+      <div class="modal">
+         <div id="close">X</div>
+         <div id="loader"></div>
+      </div>
+   </div>
+   
+   <h3 class="h3-montimi">Montimi i Roletave Veneciane</h3>
+   <h3 class="h3-montimi">Montimi i Perdeve Rolle</h3>
+   <h3 class="h3-montimi">Montimi i Perdeve Vertikale</h3>
+  </section>
+  <section class="kont " id="kontakti">
+    <h2 class="h2-kontakti">Kontakti</h2>
+    <div class="harta">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.3467715645365!2d21.47392095073763!3d42.46291293649096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x594d9530af52b58c!2zNDLCsDI3JzQ2LjUiTiAyMcKwMjgnMzQuMCJF!5e0!3m2!1ssq!2s!4v1653503750527!5m2!1ssq!2s"
+       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+       referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <form class="form" action="#" method="post" style="margin-left:20%; margin-top:0;">
+      <h4 > Forma per kontakt</h4>
+      <hr>
+        <input type="text" name="firstname" placeholder="Emri" style="margin: 0px; width: 300%; height: auto;">
+        <br>
+       <br>
+        <input type="text" name="lastname" placeholder="Mbiemri" style="margin: 0px; width: 300%; height:auto;">
+        <br><br>
+        
+        <textarea id="message" name="message" width="20%" height="60%" style="margin: 0px; width: 300%; height: auto;">									Mesazhi
+        </textarea>
+        <br><br>
+        <input type="submit" name="add" value="Dergo">
+      
+    </form>
+    <footer class="footer">
+			Copyright ©  USHR <br>
+			Referencat: <a href="https://www.blinds.com/">Foto</a> | <a href="https://www.youtube.com/blindscom">Video</a>
+       <a href="https://www.w3schools.com/howto/howto_js_slideshow.asp">JavaScript-Slider</a>| 
+      <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp?">Responsive Design</a> 
+			</footer>
+				
+</body>
+</html>
